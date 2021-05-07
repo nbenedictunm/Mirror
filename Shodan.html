@@ -2,13 +2,51 @@
 <html>
     <head>
         <title> Shodan</title>
+        <script>
+            function follow(){
+              if (followstatus.value == "follow"){
+                alert("you are now following Shodan");
+              }
+              else if ( followstatus.value == "unfollow"){
+                alert("you have unfollowed Shodan");
+              }
+             
+           
+             
+            }
+            function block(){
+                if (blockstatus.value == "not blocked"){
+                    alert("user unblocked");
+
+                }
+                else if (blockstatus.value == "blocked");{
+                    alert("user blocked");
+                }
+
+            }
+            
+          </script>
      </head>
-     <body>        <br> <br> <br>
+     <body>        
         <a href="index.html"> home</a>
 
-        <h1 id="Shodan">Shodan</h1>         <br> <br> <br>
+        <h1 id="Shodan">Shodan</h1>          <br>
         
-        y̶̛̠̬̱̜̬͙͓͇̩̖̍̏̄̽̈́̈́̐̈́̎̃̿͘͜͜͠o̵̞̣͖̅̅̓̅̀͆̌͑͆̏͌̌̎͊͐̕̕̚̕͝u̷̡̦̗̖̼͔͈̳̤̖͎̞̰̤͋̉̓̉̋̊̅͌͐͂͐̅̾̔͂̒͛̽͝ͅ'̴̛͓̭̣̭̦̣̂͛͐̀͛̑̅̎͑̈́͌̒̐̈́̉̽̓̕ṙ̴̢͍̯̭͚̘̩͎͙͖͇̯̝̮͈͔̿̍̄̚͝ͅȩ̴̠͙̼̈́̒̏̐͐̚͘ ̷̡͔̻̟̣͙͎̠̗̞̻̞̣̻̰̍̿̇̅̂̏͊̔̎̈́́͝͝ͅĩ̴̡̢̢̪̦̱͓̦͇̜̖̲̖̊̒̔̆ṉ̶̪̱̤̦̺̼̫̪̜͖̞͈͔̱̮͐̓̆͌̾͂͋̾͑̈̅͘͝͠ ̴̨̢̨̖̫̯̫̝̹̮̩̥̩͚̦̪͕͔̆̏́͛̎̉͐͗͝m̶̢̛͉̟͙̙͆̒͒̓̉̃̍̾́̆̌̚̕͝ỵ̸̢̛̛͙̬̱̠͇͇̠̺̬̱̺͓͊̿́̒͌̊̓͛͒̀̓̈́̍̌͂̚͘̕͜͝͝ͅ ̴̱̞̼͙̞͗̓̀̃͐ş̴̡̣̖̣̦̳͚͉̣͙͎̾̇̀́̊̆̾̆̈́́̃͊̓͆̚͝ͅḫ̵̛̛̳̪̺̜̃̈́͐̉̆̇̔̔̽̈́̔͒̑̋̎̈́̕͠i̵̛̛͔͈̤̫̝̙̭̯̣͔̥̻̟̣̫̓͂̈́̒̏͒̽͌̽̈́͂́̇̌͠͝͠͝ṕ̴̨̢̨̻̩̞̫̘͙̭̖̣͕̺̬̞̺͍͔͖̫̈́͒̃̀̂̄́͊̕͜           <br> <br> <br>
+          
+        
+     you're in my ship    <br><br><br>
+     <select id="followstatus">
+        <option>follow</option>
+        <option>unfollow</option>
+      </select> 
+     
+      <input type ="button" value="update follow status" onClick='follow()'> <br>
+      <select id="blockstatus">
+        <option>not blocked</option>
+        <option>blocked</option>
+    </select>
+    <input type="button" value="update block status" onclick='block()'> <br>
+      <input type ="button" value="report user" onclick="location.href='Report-User.html'"> <br> <br> <br>
 
 
 
@@ -17,7 +55,8 @@
             <img src="shodan.jpg" alt="shodan" style="width:300px"/>
             <figcaption> i'm always watching</figcaption><br>
             3/2/21
-
+        </figure>
+        comment <input type="text"><input type="button" value="post" onclick="alert('comment posted')">
 
 
 

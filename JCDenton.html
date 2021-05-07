@@ -1,13 +1,47 @@
 <!doctype html>
 <html>
     <head>
-        <title> Shodan</title>
+        <title>JC Denton</title>
+        <script>
+            function follow(){
+              if (followstatus.value == "follow"){
+                alert("you are now following JCDenton");
+              }
+              else if ( followstatus.value == "unfollow"){
+                alert("you have unfollowed JCDenton");
+              }
+             
+           
+             
+            }
+            function block(){
+                if (blockstatus.value == "not blocked"){
+                    alert("user unblocked");
+
+                }
+                else if (blockstatus.value == "blocked");{
+                    alert("user blocked");
+                }
+
+            }
+            
+          </script>
      </head>
      <body>        <br> <br> <br>
         <a href="index.html"> home</a>
 
-        <h1 id="JCDenton">JCDenton</h1>         <br> <br> <br>
-        
+        <h1 id="JCDenton">JCDenton</h1>         
+        <select id="followstatus">
+            <option>follow</option>
+            <option>unfollow</option>
+          </select> 
+          <input type ="button" value="update follow status" onClick='follow()'> <br>
+          <select id="blockstatus">
+            <option>not blocked</option>
+            <option>blocked</option>
+        </select>
+        <input type="button" value="update block status" onclick='block()'> <br>
+          <input type ="button" value="report user" onclick="location.href='Report-User.html'"><br> <br> <br>
         bravery is not a function of firepower         <br> <br> <br>
 
 
@@ -18,8 +52,14 @@
   <figure>
       <img src="jc.png" alt="jc" style="width:300px"/>
       <figcaption> what a rotten way to die</figcaption><br>
-      3/1/21
-  </figure>
+      3/1/21 <br> 
+      <input type="button" value="report post" onClick="location.href='Report-Post.html'"> <br> <br>
+      comments <br>
+  <a href="MuadDib.html"><br>MuadDib </a> icier than Paul <br>
+  <input type="button" value="report comment" onclick="location.href='Report-Comment.html'">
+  </figure> <br>
+  
+
 
 
 
