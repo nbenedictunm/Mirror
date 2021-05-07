@@ -7,5 +7,5 @@
 [Content Stream](Content-Stream.html)
 [Following](Following.html)
 [Customize](Customize.html)
-[Create Report](Create-Report.html)
+[Create Bug Report](Report-Bug.html)
 [Manage Account](Manage-Account.html)
